@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Give+You+Glory&display=swap');
+
+body {
+    background-color: blanchedalmond;
+}
+
+main { 
+    width: 900px; /* con esto la hacemos responsive */
+    max-width: 95%; /* con esto la hacemos responsive */
+    margin: 0 auto; /* con esto la hacemos responsive */
+    background-image: url("img/fondo.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    padding: 80px;
+}
+
+header {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Give You Glory", cursive;
+} 
+
+section {
+    margin-bottom: 80px;
+}
+
+section:last-of-type {
+    padding-bottom: 0;
+}
+
+footer {
+   text-align: center;
+   background-color: blanchedalmond;
+   padding: 5px;
+   font-family: "Caveat", cursive;
+   font-size: 20px;
+   margin-top: 0;
+}
+
+/* con esto centro y dejo linda la barra */
+nav {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    transition: transform 0.3s ease; /* hover del nav*/
+}
+
+nav li:hover { /* hover del nav*/
+transform: scale(1.3);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+}
+
+nav a:hover { /* hover del nav*/
+    color: chocolate;
+}
+/* con lo de arriba centro y dejo linda la barra */
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: chocolate;
+    font-family: "Give You Glory", cursive;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+img {
+    transition: transform 0.3s ease; /* hover de las imgs*/
+}
+
+img:hover { /* hover de las imgs*/
+    transform: scale(1.3);
+}
+
+.contenido {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.texto {
+    background-color: antiquewhite;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.texto p {
+    font-size: 22px;
+    font-family: "Caveat", cursive;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 20px;
+    }
+
+    .contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
